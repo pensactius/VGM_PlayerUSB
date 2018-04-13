@@ -12,7 +12,7 @@ Se pueden descargar más archivos VGM en [VGMRips](http://vgmrips.net)
 
 El proyecto consta de dos partes:
 
-- Un programa Arduino que escucha por el puerto serie a 57600 bps que recibe comandos de escritura a
+- Un programa Arduino que escucha por el puerto serie -a 57600 bps- comandos de escritura a
 los chips de sonido. Los comandos siguen el mismo formato que en los ficheros VGM:
 
 ```
