@@ -24,12 +24,12 @@ A0 aa dd   : AY-3-8910, escribir valor 'dd' en el registro 'aa'
 - Otro programa escrito en Python **vgm_streamer.py** se encarga de leer e interpretar el archivo en formato VGM. Cada vez que encuentra un comando para escribir a un chip de sonido soportado envía el comando y los operandos (registro  y valor) correspondientes por el puerto USB Arduino. La forma de usar este archivo es:
 
 ```
-vgm_streamer puerto_usb nombre_archivo_vgm
+serial_play.py puerto_usb nombre_archivo_vgm
 ```
 p.ej
 
 ```
-vgm_streamer /dev/ttyUSB0 'songs/ay8910/02 Vampire Killer.vgz'
+serial_play.py /dev/ttyUSB0 'songs/ay8910/02 Vampire Killer.vgz'
 ```
 **Nota 1**: Es necesario una placa Arduino UNO (o Nano) original, no sirven versiones chinas debido al uso de instrucciones del chip AVR propias.
 
