@@ -1,4 +1,4 @@
-# ym2149_vgm_player
+# VGM_PlayerUSB
 
 Reproductor de ficheros VGM por puerto USB. Soporta formato comprimido -ficheros .vgz- y los
  siguientes chips de sonido:
