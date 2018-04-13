@@ -7,7 +7,8 @@ Reproductor de ficheros VGM por puerto USB. Soporta formato comprimido -ficheros
 - YM2143
 - AY-3-8910 (aka YM2149)
 
-Se pueden descargar archivos VGM desde la URL: http://vgmrips.net/packs/chip/sn76489 
+Se incorporan algunos archivos de sonido de ejemplo en la carpeta _songs_. 
+Se pueden descargar más archivos VGM en [VGMRips](http://vgmrips.net)
 
 El proyecto consta de dos partes:
 
@@ -20,7 +21,7 @@ los chips de sonido. Los comandos siguen el mismo formato que en los ficheros VG
 A0 aa dd   : AY-3-8910, escribir valor 'dd' en el registro 'aa'
 ```
 
-- Otro programa escrito en Python vgm_streamer.py se encarga de leer e interpretar el archivo en formato VGM. Cada vez que encuentra un comando para escribir a un chip de sonido soportado envía el comando y los operandos (registro  y valor) correspondientes por el puerto USB Arduino. La forma de usar este archivo es:
+- Otro programa escrito en Python **vgm_streamer.py** se encarga de leer e interpretar el archivo en formato VGM. Cada vez que encuentra un comando para escribir a un chip de sonido soportado envía el comando y los operandos (registro  y valor) correspondientes por el puerto USB Arduino. La forma de usar este archivo es:
 
 ```
 vgm_streamer puerto_usb nombre_archivo_vgm
@@ -28,7 +29,7 @@ vgm_streamer puerto_usb nombre_archivo_vgm
 p.ej
 
 ```
-ym_streamer /dev/ttyUSB0 SONG1.YM
+vgm_streamer /dev/ttyUSB0 'songs/ay8910/02 Vampire Killer.vgz'
 ```
 **Nota 1**: Es necesario una placa Arduino UNO (o Nano) original, no sirven versiones chinas debido al uso de instrucciones del chip AVR propias.
 
