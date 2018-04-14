@@ -37,7 +37,7 @@ python serial_play.py /dev/ttyUSB0 'songs/ay8910/02 Vampire Killer.vgz'
 
 Conexion SN 76489:
 ```
-clk (14) ...... Arduino D1
+clk (14) ...... Arduino D11
 ~WE ( 5) ...... Arduino D12
 Ready(4) ...... N.C
 ~CE ( 6) ...... Arduino (D10) (Conectar a GND si se necesita este PIN)
