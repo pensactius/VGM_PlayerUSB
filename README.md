@@ -40,7 +40,7 @@ Conexion SN 76489:
 clk (14) ...... Arduino D11
 ~WE ( 5) ...... Arduino D12
 Ready(4) ...... N.C
-~CE ( 6) ...... Arduino (D10) (Conectar a GND si se necesita este PIN)
+~CE ( 6) ...... Arduino (D10) (Si es el único chip de sonido se puede conectar a GND y ahorrar un pin)
 D0 - D7  ...... Arduino D2 - D9
 VCC (16) ...... ARduino (+5V)
 GND ( 8) ...... Arduino (GND)
